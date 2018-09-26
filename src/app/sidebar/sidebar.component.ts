@@ -14,7 +14,6 @@ export class SidebarComponent implements OnInit {
 
   constructor(private router: Router) {
     router.events.subscribe((_: NavigationEnd) => this.currentUrl = _.url);
-    //this.router.events.pipe(event => event instanceof NavigationEnd)).subscribe((_: NavigationEnd) => (this.currentUrl))
     }
 
   ngOnInit() {}
